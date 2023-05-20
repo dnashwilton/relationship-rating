@@ -1,4 +1,5 @@
-const questions = [{
+const questions = [
+    {
         question: "1/ The greatest compliment anyone could pay you would be to say:",
         answera: "A - What a great job you make of bringing up your family.",
         answerb: "B - That you deserve to be at the top of your chosen career/profession.",
@@ -173,37 +174,37 @@ const questions = [{
     },
 
     {
-question: "26/ If you are forced, by financial circumstances to work, what do you do?",
-answera: "A - Choose something you can do at home, so as not interfere with your family life.",
-answerb: "B - You would never have to be forced, since you are already strongly motivated to work.",
-answerc: "C - Opt to do something that is artistic and creative.",
+        question: "26/ If you are forced, by financial circumstances to work, what do you do?",
+        answera: "A - Choose something you can do at home, so as not interfere with your family life.",
+        answerb: "B - You would never have to be forced, since you are already strongly motivated to work.",
+        answerc: "C - Opt to do something that is artistic and creative.",
     },
 
     {
-question: "27/ Birthdays can be pretty expensive when:",
-answera: "A - Youngsters in the family circle are growing up and want the latest fashions.",
-answerb: "B - There is a continuous stream of them at work.",
-answerc: "C - You want to spend all your money on a fabulous gift for your lover.",
+        question: "27/ Birthdays can be pretty expensive when:",
+        answera: "A - Youngsters in the family circle are growing up and want the latest fashions.",
+        answerb: "B - There is a continuous stream of them at work.",
+        answerc: "C - You want to spend all your money on a fabulous gift for your lover.",
     },
 
     {
-question: "28/ One of the most important decisions you have made recently was:",
-answera: "A - Choosing a new house.",
-answerb: "B - Making up your mind on what career you want to follow.",
-answerc: "C - Deciding on getting married.",
+        question: "28/ One of the most important decisions you have made recently was:",
+        answera: "A - Choosing a new house.",
+        answerb: "B - Making up your mind on what career you want to follow.",
+        answerc: "C - Deciding on getting married.",
     },
 
     {
-questions: "29/ A friend suggests you emigrate and join them in Australia. That would depend upon whether:",
-answera: "A - You could bear to leave some of your relatives behind.",
-answerb: "B - Your career would be advanced by going.",
-answerc: "C - Your partner would go with you.",
+        questions: "29/ A friend suggests you emigrate and join them in Australia. That would depend upon whether:",
+        answera: "A - You could bear to leave some of your relatives behind.",
+        answerb: "B - Your career would be advanced by going.",
+        answerc: "C - Your partner would go with you.",
     },
 
     {
-question: "30/ In a competition, you win the star prize of two weeks for two on a Caribbean Island. You:",
-answera: "A - Give the tickets as a honeymoon present to a couple in your family who are getting married.",
-answerb: "B - Ensure your promotion by offering them to your boss.",
-answerc: "C - Take off with your sweetheart.",
+        question: "30/ In a competition, you win the star prize of two weeks for two on a Caribbean Island. You:",
+        answera: "A - Give the tickets as a honeymoon present to a couple in your family who are getting married.",
+        answerb: "B - Ensure your promotion by offering them to your boss.",
+        answerc: "C - Take off with your sweetheart.",
     },
 ]
