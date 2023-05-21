@@ -228,16 +228,17 @@ function displayNext() {
 }
 
 // function to add 1 to answera, answerb or answerc
-
 function AnswerToQuestions() {
-if (answera === true) {
-answera =+ 1;
-}else if (answerb === true) {
-answerb =+1;
-} else (answerc === true) {
-    answerc += 1;
+    if (answera === true) {
+        answera = +1;
+    } else if (answerb === true) {
+        answerb = +1;
+    } else
+        (answerc === true); {
+        answerc += 1;
+    }
 }
-}
+
 
 // event listeners.
 
