@@ -1,5 +1,12 @@
-const questions = [
-    {
+let questionCount = 0;
+
+// 30 questions for finding out who you are.
+
+function relationships() {
+    
+
+
+const questions = [{
         question: "1/ The greatest compliment anyone could pay you would be to say:",
         answera: "A - What a great job you make of bringing up your family.",
         answerb: "B - That you deserve to be at the top of your chosen career/profession.",
@@ -208,3 +215,14 @@ const questions = [
         answerc: "C - Take off with your sweetheart.",
     },
 ]
+
+}
+
+// Show next question in list.
+
+function displayNext() {
+
+    questionCount += 1;
+
+    document.getElementById(questions)=questions.innerHTML;
+}

@@ -1,0 +1,24 @@
+* body {
+    margin: 0;
+    padding: 0;
+}
+
+#answera {
+    background-color: #ff0000;
+}
+
+#answerb {
+    background-color: #ff4500;
+}
+
+#answerc {
+    background-color: #008000;
+}
+
+#answera, #answerb, #answerc {
+    color: #ffffff;
+    height: 50px;
+    padding: 5px;
+    margin: 25px;
+    font-weight: bold;
+}
