@@ -4,6 +4,7 @@ const answera = document.getElementById("A");
 const answerb = document.getElementById("B");
 const answerc = document.getElementById("C");
 let runningQuestion = 0;
+let questionCount = 0;
 
 // 30 questions for finding out who you are.
 
@@ -223,7 +224,7 @@ let questions = [
 
 function displayNext() {
 
-    let questionCount = questions[runningQuestion];
+    questionCount = questions[runningQuestion];
 
     question.innerHTML = questionCount.question;
     choiceA.innerHTML = questionCount.choiceA;
