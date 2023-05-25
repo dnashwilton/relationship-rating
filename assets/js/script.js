@@ -1,8 +1,9 @@
-const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
-const answera = document.getElementById("A");
-const answerb = document.getElementById("B");
-const answerc = document.getElementById("C");
+// const quiz = document.getElementById("quiz");
+const question = 0;
+const newLocal = 0;
+const answera = 0;
+const answerb = 0;
+const answerc = 0;
 let runningQuestion = 0;
 let questionCount = 0;
 
