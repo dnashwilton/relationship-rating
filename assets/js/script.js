@@ -3,6 +3,7 @@ const question = document.getElementById("question");
 const answera = document.getElementById("A");
 const answerb = document.getElementById("B");
 const answerc = document.getElementById("C");
+let runningQuestion = 0;
 
 // 30 questions for finding out who you are.
 
@@ -249,10 +250,6 @@ if (questionCount === 31) {
 
 // event listeners.
 
-answera.addEventListener("click", answerToQuestions);
-answerb.addEventListener("click", answerToQuestions);
-answerc.addEventListener("click", answerToQuestions);
-
 // Final score and message explaining the score.
 
 function answerToQuestions() {
@@ -265,7 +262,7 @@ function answerToQuestions() {
 
     if (answera > answerb) and(answera > answerc); {
 
-        Message = `MOSTLY A's`
+        message = `MOSTLY A's`
         `Your major concern is with the family. You probably have children of your own or are planning to 
                 start a family fairly soon. If not, then you are the kind of person who values the parental home, 
                 gravitates there often and keeps in touch with brothers, sisters and other relatives. You are the 
@@ -289,7 +286,7 @@ function answerToQuestions() {
     }
 
     if (answerb > answera) and(answerb > answerc); {
-        Message = `MOSTLY B's`
+        message = `MOSTLY B's`
         `The core of your value system focuses around your career ambitions. You probably had early success 
                 and encouragement at school and have talents and abilities that you feel should not go to waste. You 
                 may have embarked upon a career and climbed several rungs of the ladder already. If so, this is likely 
@@ -314,7 +311,7 @@ function answerToQuestions() {
 
     if (answerc > answerb) and(answerc > answera); {
 
-        Message = `MOSTLY C's`
+        message = `MOSTLY C's`
         `You are the type of person who lives primarily for love and romance. Perhaps you are 'in love' at         Message = Message + "this moment and seeing the world through the proverbial rose-coloured spectacles. Some say this is "
             an illusion but others make an equal case that it the greatest 'reality'. Who can say which is more true?`
         `  Perhaps you have already emerged from an intense love affair that gave life a new meaning. Or you have 
@@ -337,10 +334,18 @@ function answerToQuestions() {
 
 function lastMessage() {
     if (answerb > answerb) and (answera > answerc); or (answerb > answera); and(answerb > answerc); or (answerc > answerb); and (answerc > answera);
-    Message = `WHICH IS BEST`
+    message = `WHICH IS BEST`
     `It is not our intention to judge which of these three life philosophies is the most satisfying or virtuous. People 
     are different and must follow the dictates of their heart in such matters. Each orientation has its particular 
     rewards and drawbacks.`
     `  Hopefully, what this quiz has achieved is to bring you to more explicit understanding of what motivates you in 
     in life and where your true values really lie.`
 }
+
+end_game_message = message;
+
+document.getElementById("end-game-msg").innerHTML = 'end_game_message';
+
+answera.addEventListener("click", answerToQuestions);
+answerb.addEventListener("click", answerToQuestions);
+answerc.addEventListener("click", answerToQuestions);
