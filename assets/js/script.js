@@ -1,9 +1,8 @@
-// const quiz = document.getElementById("quiz");
-const question = 0;
-const newLocal = 0;
-const answera = 0;
-const answerb = 0;
-const answerc = 0;
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const answera  = document.getElementById("A");
+const answerb  = document.getElementById("B");
+const answerc  = document.getElementById("C");
 let runningQuestion = 0;
 let questionCount = 0;
 
@@ -239,16 +238,15 @@ if (questionCount === 31) {
     // function to add 1 to answera, answerb or answerc
 
     answerToQuestions()
-} else {
-    if (answera === true) {
+} else if (alpha === true) {
         answera = +1;
-    } else if (answerb === true) {
+    } else if (beta === true) {
         answerb = +1;
     } else
-        (answerc === true); {
-        answerc += 1;
+        (charlie === true); {
+        answerc =+ 1;
     }
-}
+
 
 // event listeners.
 
