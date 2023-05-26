@@ -1,3 +1,8 @@
+window.onload = (event) => {
+    console.log ('Page Loaded');
+    };
+    
+
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const answera  = document.getElementById("A");
@@ -222,7 +227,13 @@ let questions = [
 
 // Show next question in list.
 
-function displayNext() {
+let iffy = (function (){
+    let str = 'numOne + numTwo'; return str
+})()
+
+console.log(iffy)
+
+function displayNext() { 
 
     questionCount = questions[runningQuestion];
 
@@ -244,7 +255,7 @@ if (questionCount === 31) {
         answerb = +1;
     } else
         (charlie === true); {
-        answerc =+ 1;
+        answerc =+1;
     }
 
 
@@ -349,3 +360,4 @@ document.getElementById("end-game-msg").innerHTML = 'end_game_message';
 answera.addEventListener("click", answerToQuestions);
 answerb.addEventListener("click", answerToQuestions);
 answerc.addEventListener("click", answerToQuestions);
+
