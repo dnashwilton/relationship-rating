@@ -255,7 +255,7 @@ if (questionCount === 31) {
         answerb = +1;
     } else
         (charlie === true); {
-        answerc =+1;
+        answerc = +1;
     }
 
 

@@ -3,22 +3,43 @@
     padding: 0;
 }
 
-#answera {
+#alpha {
     background-color: #ff0000;
 }
 
-#answerb {
+#beta {
     background-color: #ff4500;
 }
 
-#answerc {
+#charlie {
     background-color: #008000;
 }
 
-#answera, #answerb, #answerc {
-    color: #ffffff;
+#alpha, #beta, #charlie {
+    background-color: #ffffff;
     height: 50px;
     padding: 5px;
     margin: 25px;
     font-weight: bold;
 }
+
+#A, #B, #C {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px;
+    margin: 25px;
+    font-weight: bold;
+}
+
+#A {
+    color: #ff0000;
+}
+
+#B {
+    color: #ff4500;
+}
+
+#C {
+    color: #008000;
+}
+
