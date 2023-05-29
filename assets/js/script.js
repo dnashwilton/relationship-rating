@@ -227,13 +227,10 @@ let questions = [
 
 // Show next question in list.
 
-let iffy = (function (){
-    let str = 'numOne + numTwo'; return str
-})()
-
-console.log(iffy)
 
 function displayNext() { 
+
+    console.log('displayNext')
 
     questionCount = questions[runningQuestion];
 
@@ -258,12 +255,11 @@ if (questionCount === 31) {
         answerc = +1;
     }
 
-
-// event listeners.
-
 // Final score and message explaining the score.
 
 function answerToQuestions() {
+
+    console.log('answerToQuestions')
 
     Message = `ANSWER A SCORE:-  + Str(answera)`
     `ANSWER B SCORE:-  + Str(answerb)`
@@ -344,6 +340,9 @@ function answerToQuestions() {
 }
 
 function lastMessage() {
+
+    console.log('lastMessage')
+
     if (answerb > answerb) and (answera > answerc); or (answerb > answera); and(answerb > answerc); or (answerc > answerb); and (answerc > answera);
     message = `WHICH IS BEST`
     `It is not our intention to judge which of these three life philosophies is the most satisfying or virtuous. People 
@@ -356,6 +355,8 @@ function lastMessage() {
 end_game_message = message;
 
 document.getElementById("end-game-msg").innerHTML = 'end_game_message';
+
+// event listeners.
 
 answera.addEventListener("click", answerToQuestions);
 answerb.addEventListener("click", answerToQuestions);
