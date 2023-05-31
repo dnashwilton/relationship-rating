@@ -239,6 +239,8 @@ function NextQuestion() {
     A.innerHTML = relationship.answera;
     B.innerHTML = relationship.answerb;
     C.innerHTML = relationship.answerc;
+    addAnswers()
+    console.log('next question')
 }
 
 function addAnswers() {
@@ -250,9 +252,14 @@ function addAnswers() {
         answerThree++
     }
 
+    console.log ('click answer A')
+
     questionCount++
 
+    console.log ('questionCount++')
+
     endOfQuestions
+
     NextQuestion
 
 }
@@ -260,5 +267,7 @@ function addAnswers() {
 function endOfQuestions() {
     if (questionCount >= 31) {
         endMessage
+
+        console.log('end of message')
     }
 }
