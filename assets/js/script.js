@@ -1,15 +1,17 @@
 window.onload = (event) => {
-    console.log ('Page Loaded');
-    };
-    
+    console.log('Page Loaded');
+};
 
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
-let answera  = document.getElementById("A");
-let answerb  = document.getElementById("B");
-let answerc  = document.getElementById("C");
+let answera = document.getElementById("alpha");
+let answerb = document.getElementById("bravo");
+let answerc = document.getElementById("charlie");
 let runningQuestion = 0;
 let questionCount = 0;
+let answerOne = 0;
+let answerTwo = 0;
+let answerThree = 0;
 
 // 30 questions for finding out who you are.
 
@@ -169,7 +171,7 @@ let questions = [
     },
 
     {
-        auestion: "23/ Children should be brought up to believe in:",
+        question: "23/ Children should be brought up to believe in:",
         answera: "A - Making a stable relationship as a base for building a family.",
         answerb: "B - Making the most of whatever talents and ability they may have.",
         answerc: "C - Seeking out happiness and beauty.",
@@ -225,138 +227,38 @@ let questions = [
     },
 ];
 
-// Show next question in list.
+alpha.addEventListener("click", NextQuestion);
+bravo.addEventListener("click", NextQuestion);
+charlie.addEventListener("click", NextQuestion);
 
+// Have a question and multiiple answer session
 
-function displayNext() { 
-
-    console.log('displayNext');
-
-    questionCount = questions[runningQuestion];
-
-    question.innerHTML = questionCount.question;
-    choiceA.innerHTML = questionCount.choiceA;
-    choiceB.innerHTML = questionCount.choiceB;
-    choiceC.innerHTML = questionCount.choiceC;
+function NextQuestion() {
+    let relationship = questions[runningQuestion];
+    question.innerHTML = relationship.question;
+    A.innerHTML = relationship.answera;
+    B.innerHTML = relationship.answerb;
+    C.innerHTML = relationship.answerc;
 }
 
-
-if (questionCount === 31) {
-
-    // function to add 1 to answera, answerb or answerc
-
-    answerToQuestions();
-} else if (alpha === true) {
-        answera = +1;
-    } else if (beta === true) {
-        answerb = +1;
-    } else (charlie === true); {
-        answerc = +1;
+function addAnswers() {
+    if (alpha === true) {
+        answerOne++
+    } else if (bravo === true) {
+        answerTwo++
+    } else(charlie === true); {
+        answerThree++
     }
 
-// Final score and message explaining the score.
+    questionCount++
 
-function answerToQuestions() {
-
-    console.log('answerToQuestions');
-
-    Message = `ANSWER A SCORE:-   + Str(answera);
-    ANSWER B SCORE:-   + Str(answerb);
-    ANSWER C SCORE:-   + Str(answerc);
-    This quiz was entitled 'What Makes You Tick - Career, Family or Romance.'`;
-
-    if (answera > answerb) and(answera > answerc); {
-
-        message = `MOSTLY A's`;
-        `Your major concern is with the family. You probably have children of your own or are planning to 
-                start a family fairly soon. If not, then you are the kind of person who values the parental home, 
-                gravitates there often and keeps in touch with brothers, sisters and other relatives. You are the 
-                kind of person who would not want to be away from home at Christmas.` < br >
-            `  If you are a woman you could be described as 'traditional', if a man, you would be seen as a 
-                devoted husband, father or son who prefers to spend as much time as possible with his family.` < br >
-            `The main value of family life is probably stability and continuity and the identity that is derived 
-                from it - the series of the long-term purpose. The chances are that you keep a photograph album full of 
-                pictures of family events, such as holidays, birthdays, Christmas and Weddings which help you keep track 
-                of "where you come from" and also help you to "know who you are". You understand your roles and duties and 
-                your self-esteem is greatly enhanced by the knowledge that other people need you.`;
-
-        `REWARDS OF THE FAMILY`;
-        `It is easy to lose sight of these virtues when we read about all the violence that takes place 
-                within families, observe the high divorce rate today, and hear people moan about lack of freedom 
-                and the high cost of bringing up children. All these negative aspects are real, but families also 
-                many rewards and satisfactions that are often taken for granted. If the family was all bad news (as 
-                some radical psychiatrists seem to imply) there would be no need to feel sorry for orphans. But the 
-                truth is we do: the family is the main source of 'base-camp' security and self-definition.`;
-
-    }
-
-    if (answerb > answera) and(answerb > answerc); {
-        message = `MOSTLY B's`;
-        `The core of your value system focuses around your career ambitions. You probably had early success 
-                and encouragement at school and have talents and abilities that you feel should not go to waste. You 
-                may have embarked upon a career and climbed several rungs of the ladder already. If so, this is likely 
-                to be within an occupation that is intrinsically interesting and creative and in which you can see prospects 
-                for future progress and achievement. Actors, artists, scientists and business people, for example, are more 
-                likely to devote themselves wholeheartedly to a career than typists or assembly workers. Jobs in the latter 
-                categories are more often viewed as stop-gaps or unpleasant necessities.`;
-        `REWARDS OF A CAREER`;
-        `People who make successful careers are not only talented and achievement-oriented, they are usually extrovert 
-                and socially skilled as well. It is very difficult to make progress in the business world, or any other field, 
-                without meeting people and showing some degree  of diplomacy. Whether one is dealing with bosses, assistants, 
-                rivals, clients or the public at large, some capacity to 'win friends and influence people' is usually a prerequisite. 
-                Generally warmth and tact are innate traits, although some of the fundamental rules of how to deal with people can be 
-                taught and applied consciously.`;
-        `  The rewards of career achievement are fairly obvious. Power, wealth and fame are satisfying in their own right, and carry 
-                many spin-offs such as the opportunity to travel, dress well, eat in good restaurants, meet interesting people, and be 
-                attractive to the opposite sex. Henry Kissinger is quoted as saying, 'Power is the greatest aphrodisiac'.`;
-        `  Critics if this life-style say that the 'rat-race' leads to the neglect of friends and more important values, and if family 
-                and romance are sacrificed too much, a certain emptiness is ultimately experienced.`;
-
-    }
-
-    if (answerc > answerb) and(answerc > answera); {
-
-        message = `MOSTLY C's`;
-        `You are the type of person who lives primarily for love and romance. Perhaps you are 'in love' at         Message = Message + "this moment and seeing the world through the proverbial rose-coloured spectacles. Some say this is "
-            an illusion but others make an equal case that it the greatest 'reality'. Who can say which is more true?`;
-        `  Perhaps you have already emerged from an intense love affair that gave life a new meaning. Or you have 
-            madly in love many times before, and know that life becomes much more exciting and exhilarating when you are.`;
-        `ROMANTIC AT HEART`;
-        `Even if you are not crazy for a particular partner, and never have been in the past, you are in love with the idea 
-            of love and create it out of your imagination. You are an avid reader of romantic fiction who harks back to day of 
-            medieval chivalry or Victorian dignity and elegance. You prefer to focus upon the beautiful and stimulating things 
-            in life and ignore the pain, baring practicalities and dross.`;
-        `  Whatever your situation, you may count yourself fortunate, for it takes benevolence and a feeling of well-being 
-            to love. The chances are you are still young, for a romantic view of the world is notoriously difficult to sustain 
-            with age. On the other hand, as Barbara Cartland will attest, the belief that 'love is what makes the world go round' 
-            is not necessarily the temporary preserve of youth.`;
-
-        lastMessage;
-
-    }
+    endOfQuestions
+    NextQuestion
 
 }
 
-function lastMessage() {
-
-    console.log('lastMessage');
-
-    if (answerb > answerb) and (answera > answerc); or (answerb > answera); and(answerb > answerc); or (answerc > answerb); and (answerc > answera);
-    message = `WHICH IS BEST`;
-    `It is not our intention to judge which of these three life philosophies is the most satisfying or virtuous. People 
-    are different and must follow the dictates of their heart in such matters. Each orientation has its particular 
-    rewards and drawbacks.`;
-    `  Hopefully, what this quiz has achieved is to bring you to more explicit understanding of what motivates you in 
-    in life and where your true values really lie.`;
+function endOfQuestions() {
+    if (questionCount >= 31) {
+        endMessage
+    }
 }
-
-end_game_message = message;
-
-document.getElementById("end-game-msg").innerHTML = 'end_game_message';
-
-// event listeners.
-
-answera.addEventListener("click", answerToQuestions);
-answerb.addEventListener("click", answerToQuestions);
-answerc.addEventListener("click", answerToQuestions);
-
