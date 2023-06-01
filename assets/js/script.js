@@ -2,11 +2,16 @@ window.onload = (event) => {
     console.log('Page Loaded');
 };
 
+// All selected elements.
+
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 let answera = document.getElementById("alpha");
 let answerb = document.getElementById("bravo");
 let answerc = document.getElementById("charlie");
+
+// Variables selected
+
 let runningQuestion = 0;
 let questionCount = 0;
 let answerOne = 0;
@@ -227,11 +232,26 @@ let questions = [
     },
 ];
 
+let finalQuestion = questions.length;
+
 alpha.addEventListener("click", NextQuestion);
 bravo.addEventListener("click", NextQuestion);
 charlie.addEventListener("click", NextQuestion);
 
-// Have a question and multiiple answer session
+// Questions to be answered in turn.
+
+if(runningQuestion < finalQuestion) {
+    runningQuestion++;
+    NextQuestion();
+    addAnswers();
+    console.log('running question');
+}else{
+
+    endOfQuestions();
+    console.log('end of questions')
+}
+
+// Have a question and multiiple answer session.
 
 function NextQuestion() {
     let relationship = questions[runningQuestion];
@@ -240,23 +260,29 @@ function NextQuestion() {
     B.innerHTML = relationship.answerb;
     C.innerHTML = relationship.answerc;
     addAnswers()
-    console.log('next question')
+    console.log('nextQuestion')
 }
 
 function addAnswers() {
     if (alpha === true) {
         answerOne++
+        console.log ('answerOne')
     } else if (bravo === true) {
         answerTwo++
+    console.log ('answerTwo')
     } else(charlie === true); {
         answerThree++
+    console.log('answerThree')
     }
 
-    console.log ('click answer A')
 
-    questionCount++
 
-    console.log ('questionCount++')
+
+
+
+    // questionCount = answerOne + answerTwo + answerThree;
+
+    console.log (questionCount)
 
     endOfQuestions
 
