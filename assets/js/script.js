@@ -240,12 +240,12 @@ charlie.addEventListener("click", NextQuestion);
 
 // Questions to be answered in turn.
 
-if(runningQuestion < finalQuestion) {
+if (runningQuestion < finalQuestion) {
     runningQuestion++;
     NextQuestion();
     addAnswers();
     console.log('running question');
-}else{
+} else {
 
     endOfQuestions();
     console.log('end of questions');
@@ -265,24 +265,36 @@ function NextQuestion() {
 
 function addAnswers() {
     if (alpha === true) {
-        answerOne++;
-        console.log ('answerOne');
+        answerA()
     } else if (bravo === true) {
-        answerTwo++;
-    console.log ('answerTwo');
+        answerB()
     } else(charlie === true); {
-        answerThree++;
-    console.log('answerThree');
+        answerC()
     }
 
     // questionCount = answerOne + answerTwo + answerThree;
 
-    console.log (questionCount);
+    console.log(questionCount);
 
     endOfQuestions;
 
     NextQuestion;
 
+}
+
+function answerA() {
+    answerOne++;
+    console.log('answerOne');
+}
+
+function answerB() {
+    answerTwo++;
+    console.log('answerTwo');
+}
+
+function answerC() {
+    answerThree++
+    console.log('answerThree')
 }
 
 function endOfQuestions() {
