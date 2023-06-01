@@ -248,7 +248,7 @@ if(runningQuestion < finalQuestion) {
 }else{
 
     endOfQuestions();
-    console.log('end of questions')
+    console.log('end of questions');
 }
 
 // Have a question and multiiple answer session.
@@ -259,41 +259,36 @@ function NextQuestion() {
     A.innerHTML = relationship.answera;
     B.innerHTML = relationship.answerb;
     C.innerHTML = relationship.answerc;
-    addAnswers()
-    console.log('nextQuestion')
+    addAnswers();
+    console.log('nextQuestion');
 }
 
 function addAnswers() {
     if (alpha === true) {
-        answerOne++
-        console.log ('answerOne')
+        answerOne++;
+        console.log ('answerOne');
     } else if (bravo === true) {
-        answerTwo++
-    console.log ('answerTwo')
+        answerTwo++;
+    console.log ('answerTwo');
     } else(charlie === true); {
-        answerThree++
-    console.log('answerThree')
+        answerThree++;
+    console.log('answerThree');
     }
-
-
-
-
-
 
     // questionCount = answerOne + answerTwo + answerThree;
 
-    console.log (questionCount)
+    console.log (questionCount);
 
-    endOfQuestions
+    endOfQuestions;
 
-    NextQuestion
+    NextQuestion;
 
 }
 
 function endOfQuestions() {
     if (questionCount >= 31) {
-        endMessage
+        endMessage;
 
-        console.log('end of message')
+        console.log('end of message');
     }
 }
