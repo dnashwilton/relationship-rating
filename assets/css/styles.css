@@ -32,6 +32,12 @@
     color : lightseagreen;
 }
 
+.choices #alpha{
+    height: 350px;
+    width: auto;
+    background-color: #000;
+}
+
 /*
 
 #qImg{
