@@ -2,305 +2,155 @@ window.onload = (event) => {
     console.log('Page Loaded');
 };
 
-// All selected elements.
-
+// select all elements
+const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
-let answera = document.getElementById("alpha");
-let answerb = document.getElementById("bravo");
-let answerc = document.getElementById("charlie");
+const qImg = document.getElementById("qImg");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const progress = document.getElementById("progress");
+const scoreDiv = document.getElementById("scoreContainer");
 
-// Variables selected
-
-let runningQuestion = 0;
-let questionCount = 0;
-let answerOne = 0;
-let answerTwo = 0;
-let answerThree = 0;
-
-// 30 questions for finding out who you are.
-
+// create our questions
 let questions = [
-
     {
-        question: "1/ The greatest compliment anyone could pay you would be to say:",
-        answera: "A - What a great job you make of bringing up your family.",
-        answerb: "B - That you deserve to be at the top of your chosen career/profession.",
-        answerc: "C - How happy your lover looks since they met you.",
-    },
-
-    {
-        question: "2/ At Christmas, it is important for you too:",
-        answera: "A - Have a traditional family celebration.",
-        answerb: "B - Send presents to essential business contacts.",
-        answerc: "C - Be alone with your partner.",
-    },
-
-    {
-        question: "3/ You have to give up your job to look after your children. You feel:",
-        answera: "A - It is the right and proper way to proceed.",
-        answerb: "B - Frustrated that you will not be able to fulfil your ambitions.",
-        answerc: "C - Relieved when they go to school so that you have more time to spend with your partner.",
-    },
-
-    {
-        question: "4/ Where do you want to live?",
-        answera: "A - In the country, in fresh air and green countryside.",
-        answerb: "B - In a big city, where you can be at the heart of a thriving business community.",
-        answerc: "C - By the sea, with stunning sunsets to share with your soul mate.",
-    },
-
-    {
-        question: "5/ You mostly dress in clothes that are:",
-        answera: "A - Comfortable for knocking around the house.",
-        answerb: "B - Smart and create an impression of elegant efficiency.",
-        answerc: "C - Alluring and attractive to the opposite sex.",
-    },
-
-    {
-        question: "6/ You prefer to eat:",
-        answera: "A - A well-cooked meal at home.",
-        answerb: "B - In an expensive, fashionable restaurant.",
-        answerc: "C - In a candlelit, cosy bistro.",
-    },
-
-    {
-        question: "7/ People whose homes are always in a mess tend to be:",
-        answera: "A - Lazy and undisciplined.",
-        answerb: "B - Too busy with more important things.",
-        answerc: "C - Charmingly Bohemian.",
-    },
-
-    {
-        question: "8/ Energy is well spent on:",
-        answera: "A - Keeping your home spotless.",
-        answerb: "B - Talking at length to colleagues to keep your finger on the pulse at work.",
-        answerc: "C - Strenuous exercise and beauty programmes to keep in shape.",
-    },
-    {
-        question: "9/ A person who is power and money-motivated is:",
-        answera: "A - Missing out on the real rewards to be gained by family life.",
-        answerb: "B - A real 'go-getter' deserving of admiration.",
-        answerc: "C - Losing touch with the joy of romance.",
-    },
-
-    {
-        question: "10/ Someone who is prepared to devote themselves to finding an ideal mate is:",
-        answera: "A - Chasing rainbows.",
-        answerb: "B - A romantic fool.",
-        answerc: "C - An idealist.",
-    },
-
-    {
-        question: "11/ A secure and happy home and family life is:",
-        answera: "A - All you could ever desire.",
-        answerb: "B - Not enough to satisfy you.",
-        answerc: "C - The way you like to think of your parents.",
-    },
-
-    {
-        question: "12/ Most of your friends are:",
-        answera: "A - Other parents.",
-        answerb: "B - People connected with work.",
-        answerc: "C - Other young couples.",
-    },
-
-    {
-        question: "13/ You choose as a partner:",
-        answera: "A - Someone you can trust to be a good parent.",
-        answerb: "B - A person who is independent and has their own career.",
-        answerc: "C - Someone you are madly in love with.",
-    },
-
-    {
-        question: "14/ The pictures in your photograph album are of:",
-        answera: "A - Several generations of family and friends.",
-        answerb: "B - Various achievements in your life - for example - winning prizes at school or university.",
-        answerc: "C - Yourself and your lover on holiday in various places.",
-    },
-
-    {
-        question: "15/ The cosmetics and toiletries you use are primarily:",
-        answera: "A - To keep your skin clean and fresh smelling.",
-        answerb: "B - To preserve a well-groomed and sophisticated image.",
-        answerc: "C - To make yourself alluring and attractive to the opposite sex.",
-    },
-
-    {
-        questions: "16/ The politician who would get your vote would be lobbying for:",
-        aAnswera: "A - Better education.",
-        answerb: "B - Cuts in income tax.",
-        answerC: "C - More support for the arts.",
-    },
-
-    {
-        question: "17/ Most of your food budget goes on:",
-        answera: "A - Meals for the family.",
-        answerb: "B - 'Expense account' lunches.",
-        answerc: "C - Banquets for your lover.",
-    },
-
-    {
-        question: "18/ When you are feeling emotional or upset, the cause more often than not is:",
-        answera: "A - Problems at home.",
-        answerb: "B - Trouble at work.",
-        answerc: "C - Conflict with your partner.",
-    },
-
-    {
-        question: "19/ Whom do you relate to most comfortably?",
-        answera: "A - Relatives.",
-        answerb: "B - Business colleagues.",
-        answerc: "C - Your partner.",
-    },
-
-    {
-        question: "20/ Your daydreams take the form of:",
-        answera: "A - Decorating your 'dream' home.",
-        answerb: "B - Being eminently successful in the career that you have chosen.",
-        answerc: "C - Going on a romantic voyage with your lover.",
-    },
-
-    {
-        question: "21/ A woman whose lifestyle you admire is:",
-        answera: "A - The Late Queen (Elizabeth II).",
-        answerb: "B - The former Prime Minister (Margaret Thatcher).",
-        answerc: "C - The Late Princess of Wales (Lady Diana).",
-    },
-
-    {
-        question: "22/ You feel 'in your element' where you are:",
-        answera: "A - On home territory and surrounded by your loved ones.",
-        answerb: "B - In an office which is equipped with the latest technology.",
-        answerc: "C - Anywhere with your lover by your side to provide strength and support.",
-    },
-
-    {
-        question: "23/ Children should be brought up to believe in:",
-        answera: "A - Making a stable relationship as a base for building a family.",
-        answerb: "B - Making the most of whatever talents and ability they may have.",
-        answerc: "C - Seeking out happiness and beauty.",
-    },
-
-    {
-        question: "24/ A gift you would really appreciate right now would be:",
-        answera: "A - A new vacuum cleaner.",
-        answerb: "B - Next year's diary.",
-        answerc: "C - A recording of your favourite love song.",
-    },
-
-    {
-        question: "25/ What aspect of shopping do you find irritating?",
-        answera: "A - Being patronized because you are a 'mere' housewife/husband.",
-        answerb: "B - Time wasted standing in queues.",
-        answerc: "C - Drabness in shops and lack of glamour generally.",
-    },
-
-    {
-        question: "26/ If you are forced, by financial circumstances to work, what do you do?",
-        answera: "A - Choose something you can do at home, so as not interfere with your family life.",
-        answerb: "B - You would never have to be forced, since you are already strongly motivated to work.",
-        answerc: "C - Opt to do something that is artistic and creative.",
-    },
-
-    {
-        question: "27/ Birthdays can be pretty expensive when:",
-        answera: "A - Youngsters in the family circle are growing up and want the latest fashions.",
-        answerb: "B - There is a continuous stream of them at work.",
-        answerc: "C - You want to spend all your money on a fabulous gift for your lover.",
-    },
-
-    {
-        question: "28/ One of the most important decisions you have made recently was:",
-        answera: "A - Choosing a new house.",
-        answerb: "B - Making up your mind on what career you want to follow.",
-        answerc: "C - Deciding on getting married.",
-    },
-
-    {
-        questions: "29/ A friend suggests you emigrate and join them in Australia. That would depend upon whether:",
-        answera: "A - You could bear to leave some of your relatives behind.",
-        answerb: "B - Your career would be advanced by going.",
-        answerc: "C - Your partner would go with you.",
-    },
-
-    {
-        question: "30/ In a competition, you win the star prize of two weeks for two on a Caribbean Island. You:",
-        answera: "A - Give the tickets as a honeymoon present to a couple in your family who are getting married.",
-        answerb: "B - Ensure your promotion by offering them to your boss.",
-        answerc: "C - Take off with your sweetheart.",
-    },
+        question : "What does HTML stand for?",
+        imgSrc : "img/html.png",
+        choiceA : "Correct",
+        choiceB : "Wrong",
+        choiceC : "Wrong",
+        correct : "A"
+    },{
+        question : "What does CSS stand for?",
+        imgSrc : "img/css.png",
+        choiceA : "Wrong",
+        choiceB : "Correct",
+        choiceC : "Wrong",
+        correct : "B"
+    },{
+        question : "What does JS stand for?",
+        imgSrc : "img/js.png",
+        choiceA : "Wrong",
+        choiceB : "Wrong",
+        choiceC : "Correct",
+        correct : "C"
+    }
 ];
 
-let finalQuestion = questions.length;
+// create some variables
 
-alpha.addEventListener("click", NextQuestion);
-bravo.addEventListener("click", NextQuestion);
-charlie.addEventListener("click", NextQuestion);
+const lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+const questionTime = 10; // 10s
+const gaugeWidth = 150; // 150px
+const gaugeUnit = gaugeWidth / questionTime;
+let TIMER;
+let score = 0;
 
-// Questions to be answered in turn.
-
-if (runningQuestion < finalQuestion) {
-    runningQuestion++;
-    NextQuestion();
-    addAnswers();
-    console.log('running question');
-} else {
-
-    endOfQuestions();
-    console.log('end of questions');
+// render a question
+function renderQuestion(){
+    let q = questions[runningQuestion];
+    
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    qImg.innerHTML = "<img src="+ q.imgSrc +">";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
 }
 
-// Have a question and multiiple answer session.
+start.addEventListener("click",startQuiz);
 
-function NextQuestion() {
-    let relationship = questions[runningQuestion];
-    question.innerHTML = relationship.question;
-    A.innerHTML = relationship.answera;
-    B.innerHTML = relationship.answerb;
-    C.innerHTML = relationship.answerc;
-    addAnswers();
-    console.log('nextQuestion');
+// start quiz
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
-function addAnswers() {
-    if (alpha === true) {
-        answerA()
-    } else if (bravo === true) {
-        answerB()
-    } else(charlie === true); {
-        answerC()
-    }
-
-    // questionCount = answerOne + answerTwo + answerThree;
-
-    console.log(questionCount);
-
-    endOfQuestions;
-
-    NextQuestion;
-
-}
-
-function answerA() {
-    answerOne++;
-    console.log('answerOne');
-}
-
-function answerB() {
-    answerTwo++;
-    console.log('answerTwo');
-}
-
-function answerC() {
-    answerThree++
-    console.log('answerThree')
-}
-
-function endOfQuestions() {
-    if (questionCount >= 31) {
-        endMessage;
-
-        console.log('end of message');
+// render progress
+function renderProgress(){
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
     }
 }
+
+// counter render
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit + "px";
+        count++
+    }else{
+        count = 0;
+        // change progress color to red
+        answerIsWrong();
+        if(runningQuestion < lastQuestion){
+            runningQuestion++;
+            renderQuestion();
+        }else{
+            // end the quiz and show the score
+            clearInterval(TIMER);
+            scoreRender();
+        }
+    }
+}
+
+// checkAnwer
+
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
+        // answer is correct
+        score++;
+        // change progress color to green
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        // end the quiz and show the score
+        clearInterval(TIMER);
+        scoreRender();
+    }
+}
+
+// answer is correct
+function answerIsCorrect(){
+    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+}
+
+// answer is Wrong
+function answerIsWrong(){
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+}
+
+// score render
+function scoreRender(){
+    scoreDiv.style.display = "block";
+    
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score/questions.length);
+    
+    // choose the image based on the scorePerCent
+    let img = (scorePerCent >= 80) ? "img/5.png" :
+              (scorePerCent >= 60) ? "img/4.png" :
+              (scorePerCent >= 40) ? "img/3.png" :
+              (scorePerCent >= 20) ? "img/2.png" :
+              "img/1.png";
+    
+    scoreDiv.innerHTML = "<img src="+ img +">";
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";

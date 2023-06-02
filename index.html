@@ -10,19 +10,27 @@
 </head>
 
 <body>
-
-    <div id="container">
-        <div id="box"></div>
-        <div><span id="question">Question</span> 
-            <div><span id="A">Answer A</span> </div>
-            <div><span id="B"><span>Answer B</span></div>
-            <div><span id="C">Answer C</span></div>            
+    <form>
+        <div id="container">
+            <div id="start">Start Quiz!</div>
+            <div id="quiz" style="display: none">
+                <div id="question"></div>
+                <div id="qImg"></div>
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                </div>
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="btimeGauge"></div>
+                    <div id="timeGauge"></div>
+                </div>
+                <div id="progress"></div>
+            </div>
+            <div id="scoreContainer" style="display: none"></div>
         </div>
-    </div>
-    <button id="alpha">Answer A</button>
-    <button id="bravo">Answer B</button>
-    <button id="charlie">Answer C</button>
-
+    </form>
     <script src="assets/js/script.js"></script>
 </body>
 
