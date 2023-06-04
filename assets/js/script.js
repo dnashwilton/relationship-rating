@@ -152,6 +152,10 @@ function startQuiz(){
     // TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
+alpha.addEventListener("click",renderProgress);
+bravo.addEventListener("click",renderProgress);
+charlie.addEventListener("click",renderProgress);
+
 // render progress
 function renderProgress(){
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
