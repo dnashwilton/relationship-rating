@@ -18,21 +18,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
+        question : "1 What does HTML stand for?",
         // imgSrc : "img/html.png",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "2 What does CSS stand for?",
         // imgSrc : "img/css.png",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "3 What does JS stand for?",
         // imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
@@ -53,49 +53,63 @@ let questions = [
         choiceC : "Wrong",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "4 What does JS stand for?",
         // imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         correct : "C"
     },{
-        question : "What does HTML stand for?",
+        question : "5 What does HTML stand for?",
         // imgSrc : "img/html.png",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "6 What does CSS stand for?",
         // imgSrc : "img/css.png",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "7 What does JS stand for?",
         // imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         correct : "C"
     },{
-        question : "What does HTML stand for?",
+        question : "8 What does HTML stand for?",
         // imgSrc : "img/html.png",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "9 What does CSS stand for?",
         // imgSrc : "img/css.png",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "10 What does JS stand for?",
+        // imgSrc : "img/js.png",
+        choiceA : "Wrong",
+        choiceB : "Wrong",
+        choiceC : "Correct",
+        correct : "C"
+    },{
+        question : "11 What does CSS stand for?",
+        // imgSrc : "img/css.png",
+        choiceA : "Wrong",
+        choiceB : "Correct",
+        choiceC : "Wrong",
+        correct : "B"
+    },{
+        question : "12 What does JS stand for?",
         // imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
@@ -109,10 +123,10 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-// const questionTime = 15; // 15s
-// const gaugeWidth = 150; // 150px
-// const gaugeUnit = gaugeWidth / questionTime;
-// let TIMER;
+const questionTime = 15; // 15s
+const gaugeWidth = 150; // 150px
+const gaugeUnit = gaugeWidth / questionTime;
+let TIMER;
 let score = 0;
 
 // render a question
@@ -120,7 +134,7 @@ function renderQuestion(){
     let q = questions[runningQuestion];
     
     question.innerHTML = "<p>"+ q.question +"</p>";
-    qImg.innerHTML = "<img src="+ q.imgSrc +">";
+    // qImg.innerHTML = "<img src="+ q.imgSrc +">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
@@ -210,7 +224,7 @@ function scoreRender(){
 
     // Match case to answers
 
-    Select Case CorrectAnswers
+   /* Select Case CorrectAnswers
 
 Case 0 To 3
 Message = "This score shows that your knowledge about sex is very basic. "
@@ -238,7 +252,7 @@ Message = Message = "about sex, your partner should be a very happy person."
 MsgBox Message, DialogType, Title
 
 End Select
-
+*/
     
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "assets/images/05.png" :
