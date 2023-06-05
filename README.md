@@ -35,9 +35,16 @@ This quiz will inform you of what you about your I. Q. of peoples' sexuality.
     - [Content](#content)
     - [Media](#media)
     - [Code](#code)
-    - [Features](#features)
 
-Existing Features
+    <hr>
+
+## Features
+
+<br>
+
+### Existing Features
+
+<br>
 
 Navigation Bar
 
@@ -339,6 +346,3 @@ My thanks to my mentor Martina for the help and encouragement she gave me while 
 
 
 Top of Page
-
-[def]: #existing-features
-[def2]: #existing-features
