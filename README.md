@@ -1,108 +1,341 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# What Make You Tick
 
-Welcome David Nash,
+This quiz will inform you of what you about your I. Q. of peoples' sexuality.
+<br>
+# Table of Contents
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- [Features](#features)
+Existing Features
+Future Features
+UX
+Site Purpose
+Site Goal
+Visitors
+Communication
+User Goals
+Site Administration Goals
+[Design]
+Colour Scheme
+Typography
+Imagery
+Pages
+Testing
+Manual Testing
+Validation Testing
+Bugs
+Technologies Used
+Main Languages Used
+Programmes Used
+Deployment
+Using GitHub pages
+How to Fork it
+How to Clone it
+Making a Local Clone
+Credits
+Content
+Media
+Code
+Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Existing Features
 
-## Gitpod Reminders
+Navigation Bar
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Home Page
 
-`python3 -m http.server`
+Early History of Wakehurst Page
 
-A blue button should appear to click: _Make Public_,
+Today at Wakehurst Page
 
-Another blue button should appear to click: _Open Browser_.
+History of Wakehurst Page
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Comments Page
 
-A blue button should appear to click: _Make Public_,
+Maps Page
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Future Features
 
-To log into the Heroku toolbelt CLI:
+Placing text regarding information about the restaurant and cafés on a seperate area when viewed on Tablet or Iphone.
+Placing images in one column when viewed on Tablets and Iphone.
+Responsive navigation bar for Tablet and Iphone.
+Contact information for Wakehurst Place.
+Updating the name field in the comments page to exclude numbers.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Top of Page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+UX
 
-------
+Site Purpose
 
-## Release History
+To provide upto date information of Wakehurst Place and Kew Gardens with external links to the website of Wakehurst.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Site Goal
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+To keep the visitors updated with new attractions and future events.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Visitors
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Visitors can see some of the views of the landscape of Wakehurst Place and the surrounding landscape.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Communication
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The individual people which complete the Comments form are able to give their views of Wakehurst and will aid the planning of future action taken at Wakehurst.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The personal information taken will be safeguarded and will used for demographic purposes.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+User Goals
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+To find what new attractions there are at Wakehurst and where to go with the Maps.
+The site can be used to obtain upto date information from other websites.
+The ability to navigation between pages on all devices easily.
+To be motivated to find out about Wakehurst Place if the mansion or part of the gardens are closed.
+The responsive design can be viewed on other devices other than laptops and Monitors.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Site Adminstrator Goals.
+To keep the sight up to date.
+To keep the images up to date and relevant.
+To obtain visitor feedback with the contact form.
+Top of Page
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Design
 
-------
+The Colour Scheme
+The colour scheme was chosen to compliment Wakehurst Place and Kew Gardens. Most of the colours were used and the background colour 'Whitesmoke' was used.
 
-## FAQ about the uptime script
+Forest Colours
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Typography
 
-**How will this affect me?**
+Old English Text MT, Sans-Serif for navigation and h1 headings.
+Avenir Next LT Demi bold, Sans-Serif for h2, h3 and h4 headings.
+Calibri, Sans-Serif for paragraph text.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Imagery
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+All images were taken by myself with the exception of the images on the pages of the early history and History of the Mansion. Those images were downloaded from Google Images. All images were selected to support the information presented on the relevant pages.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The blocks of white are picture holders
 
-**So….?**
+Home Page
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+Home Page
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Pre-history Page
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Early History Page
 
----
 
-Happy coding!
+Today at Wakehurst Page
+
+
+Today at Wakehurst Page
+
+
+History of the Mansion Page
+
+
+History of the Mansion Page
+
+
+Comments Page
+
+
+Comments Page
+
+
+Maps Page
+
+
+Maps of Wakehurst Page
+
+
+Top of Page
+
+Testing
+
+Manual Testing
+
+The website was continually updated as it was developed. I tried to use the dev tools while using Code Institute’s gitpod on Chrome. It would not be successful each time, as I had to change the password each time I tried to use Chrome.
+
+The only time I was successful was when I copied and pasted the html and css code onto the html and css sheets on Visual Studio 2022 and saved everything. I right-clicked the index.html and deployed Chrome, Opera and Firefox.
+
+Tested the comments page with and without inputs in all fields.
+
+Tested all links on all pages.
+
+Verified the comments form is unable to be submitted with the required information (Name, Email, radio buttons and checkboxs clicked and the comments section).
+
+Website tested in Firefox, Opera, Edge and Chrome.
+
+Lighthouse scores
+
+
+Index Page
+
+
+Lighthouse scores
+
+
+Early History Page
+
+
+Lighthouse scores
+
+
+Lighthouse scores
+
+
+History of the Mansion Page
+
+
+Lighthouse scores
+
+
+Comments Page
+
+
+Lighthouse scores
+
+
+Maps Page
+
+
+Navigation Menu
+The relevant page will open
+Clicked each menu link
+Taken to selected Page
+
+Social Link icons
+External links will open
+Click on icon
+Taken to selected site in new tab
+
+Required form fields
+If the required field are left blank, the form will not submit. The fields will display messsages
+Incomplete form
+A message will be displayed to make sure the correct information is filled in
+
+Form submit button
+When the submit button is pressed, the form submits
+Complete form and click button
+Information is sent and form cleared ready for more inputs
+Validation Testing
+
+HTML
+
+Some errors were found but corrected while on the official W3C Validator.
+CSS
+
+One error was found but corrected while on the official (Jigsaw) Validator.
+Bugs
+Earlier in the testing phase, I found that was found in the correct place but was not. I found was below
+
+. When I switched them to their correct alignment, W3C Validator passed the code.
+I slipped a piece of code into the css sheet and commit it. I realised what happened and corrected the error. W3C css validator caught a missing '}'. I relplaced the '}' and the error was corrected.
+
+During the development of the website, I always had a local copy of the website I could refer to when needed. When issues arose, I looked through books on HTML and CSS to confirm ideas I knew could correct the problem or take the suggestions in the books so that the website would function better and the coding would be easy to read.
+
+I could not confirm that the website was working correctly on an iPhone or tablet needed for the course. I have a Galaxy Tab and phone. The website on my tablet and phone reacts the same as when I simulate the tablet and iPhone on the laptop.
+
+Top of Page
+
+Technologies Used
+
+Main Languages Used
+HTML
+CSS
+
+Programmes Used
+Gitpod to create my HTML files and CSS styles sheet before committing and pushing the project to GitHub.
+
+GitHub to store my repository for submission.
+
+Affinity Designer to make the primary look for each page.
+
+Affinity Photo to design the main picture with the inserts of the project’s home page projected onto the screen of the electronic devices.
+
+Basic Markdown cheat sheets to complete the Readme file.
+
+Top of Page
+
+Deployment
+
+Using GitHub Pages
+
+In the GitHub Repository from the project
+
+[Wakehurst Place][def]
+
+Click the 'Settings' Tab
+Scroll down to the GitHub Pages Heading.
+Select 'Main Branch' as the source.
+The page will reload 'Settings' again.
+Scroll down to GitHub pages headings and there will now be a clickable link. https://github.com/dnashwilton/Wakehurst-Place/
+Click on the link for the live deployed page.
+
+How to Fork it
+
+On GitHub go to https://github.com/dnashwilton/Wakehurst-Place.
+In the top right, click 'Fork'.
+
+How to Clone it
+
+Go to the main page of the repository.
+Above the file list, click 'Code'.
+Select HTTPS, SSH or GitHub CLI and then click 'Copy' to clone it.
+Open Git Bash.
+Change the location of your cloned repository.
+Type git clone and then paste the URL you copied.
+Press 'Enter' to create your clone.
+
+Making a local clone
+
+Locate the Reposity.
+Click 'Code'.
+Click 'Clone' or 'Download'.
+Copy the Git URL from the dialogue box.
+Open a terminal window in your chosen directory using your preferred development editor.
+Change the location to where you want the cloned directory to be.
+Type git clone, and paste the URL you copied.
+Press 'Enter', and your local clone will be created.
+
+Top of Page
+
+Credits
+Content
+The basic setup of the pages was based on the websites of the National Trust, Wakehurst Place and Kew Gardens. As I based the project on Wakehurst Place, I looked at their website more. I chose a forest pallet with the colours of the different species of trees and sky.
+
+The navigation and footer style of coding I took from Love Running and Percipio. Percipio was the website I was learning from before beginning the course with Code Institute.
+
+Media
+The images on the Early History and History of the Mansion are from Google images. The images and MP4's on the other pages are mine. These were taken on a Pentax K70 with 18-55mm and 55-200mm zoom lens and 50mm prime lens.
+
+Code
+The resources that were used in the project:
+
+
+Sams TeachYourself HTML, CSS, and JavaScript (THIRD EDITION)
+
+
+Mike McGrath HTML, CSS & JavaScript (Special Edition)
+
+
+All photos and mp4's are mine except for images on pre-history.html and mansion.html. Saved my photos and mp4's on https://dnashwilton.imgur.com/all/, onedrive, C://, usb and portable harddrives.
+
+
+I have taken some of the text from Wakehurst, Kew Gardens and various sources from Goggle. I have then rewritten some of the information in my own words. I have run the documentation through the microsoft editor for word 365 and grammerly and found that a small percentage is in the text.
+
+
+My thanks to my mentor Martina for the help and encouragement she gave me while I was developing this project.
+
+
+Top of Page
