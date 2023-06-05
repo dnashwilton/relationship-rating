@@ -61,7 +61,7 @@ Comments Page
 Maps Page
 
 
-Future Features
+### Future Features
 
 Placing text regarding information about the restaurant and cafés on a seperate area when viewed on Tablet or Iphone.
 Placing images in one column when viewed on Tablets and Iphone.
@@ -69,55 +69,86 @@ Responsive navigation bar for Tablet and Iphone.
 Contact information for Wakehurst Place.
 Updating the name field in the comments page to exclude numbers.
 
-Top of Page
+[Top of Page](#table-of-contents)
 
-UX
+<hr>
 
-Site Purpose
+## UX
+
+<br>
+
+### Site Purpose
+
+<br>
 
 To provide upto date information of Wakehurst Place and Kew Gardens with external links to the website of Wakehurst.
 
+<br>
 
-Site Goal
+### Site Goal
+
+<br>
 
 To keep the visitors updated with new attractions and future events.
 
+<br>
 
-Visitors
+### Visitors
+
+<br>
 
 Visitors can see some of the views of the landscape of Wakehurst Place and the surrounding landscape.
 
+<br>
 
-Communication
+### Communication
+
+<br>
 
 The individual people which complete the Comments form are able to give their views of Wakehurst and will aid the planning of future action taken at Wakehurst.
 
 The personal information taken will be safeguarded and will used for demographic purposes.
 
+<br>
 
-User Goals
+### User Goals
 
-To find what new attractions there are at Wakehurst and where to go with the Maps.
-The site can be used to obtain upto date information from other websites.
-The ability to navigation between pages on all devices easily.
-To be motivated to find out about Wakehurst Place if the mansion or part of the gardens are closed.
-The responsive design can be viewed on other devices other than laptops and Monitors.
+<br>
 
-Site Adminstrator Goals.
-To keep the sight up to date.
-To keep the images up to date and relevant.
-To obtain visitor feedback with the contact form.
-Top of Page
+- To find what new attractions there are at Wakehurst and where to go with the Maps.
+- The site can be used to obtain upto date information from other websites.
+- The ability to navigation between pages on all devices easily.
+- To be motivated to find out about Wakehurst Place if the mansion or part of the gardens are closed.
+- The responsive design can be viewed on other devices other than laptops and Monitors.
 
-Design
+<br>
 
-The Colour Scheme
+### Site Adminstrator Goals.
+
+<br>
+
+- To keep the sight up to date.
+- To keep the images up to date and relevant.
+- To obtain visitor feedback with the contact form.
+
+<br>
+
+[Top of Page](#table-of-contents)
+
+<hr>
+
+## Design
+
+<br>
+
+### The Colour Scheme
 The colour scheme was chosen to compliment Wakehurst Place and Kew Gardens. Most of the colours were used and the background colour 'Whitesmoke' was used.
 
 Forest Colours
 
+<br>
 
-Typography
+### Typography
 
 Old English Text MT, Sans-Serif for navigation and h1 headings.
 Avenir Next LT Demi bold, Sans-Serif for h2, h3 and h4 headings.
@@ -164,12 +195,15 @@ Maps Page
 
 Maps of Wakehurst Page
 
+<br>
 
-Top of Page
+[Top of Page](#table-of-contents)
 
-Testing
+<hr>
 
-Manual Testing
+## Testing
+
+### Manual Testing
 
 The website was continually updated as it was developed. I tried to use the dev tools while using Code Institute’s gitpod on Chrome. It would not be successful each time, as I had to change the password each time I tried to use Chrome.
 
@@ -253,80 +287,105 @@ During the development of the website, I always had a local copy of the website 
 
 I could not confirm that the website was working correctly on an iPhone or tablet needed for the course. I have a Galaxy Tab and phone. The website on my tablet and phone reacts the same as when I simulate the tablet and iPhone on the laptop.
 
-Top of Page
+<br>
 
-Technologies Used
+[Top of Page](#table-of-contents)
 
-Main Languages Used
-HTML
-CSS
+<hr>
 
-Programmes Used
-Gitpod to create my HTML files and CSS styles sheet before committing and pushing the project to GitHub.
+## Technologies Used
 
-GitHub to store my repository for submission.
+### Main Languages Used
+- HTML
+- CSS
+- JAVASCRIPT
+
+### Programmes Used
+- Gitpod to create my HTML files and CSS styles sheet before committing and pushing the project to GitHub.
+
+- GitHub to store my repository for submission.
 
 Affinity Designer to make the primary look for each page.
 
 Affinity Photo to design the main picture with the inserts of the project’s home page projected onto the screen of the electronic devices.
 
-Basic Markdown cheat sheets to complete the Readme file.
+- Basic Markdown cheat sheets to complete the Readme file.
 
-Top of Page
+[Top of Page](#table-of-contents)
 
-Deployment
+<hr>
 
-Using GitHub Pages
+## Deployment
+
+<br>
+
+### Using GitHub Pages
+
+<br>
 
 In the GitHub Repository from the project
 
-[Wakehurst Place][def]
+1. Click the 'Settings' Tab
+1. Scroll down to the GitHub Pages Heading.
+1. Select 'Main Branch' as the source.
+1. The page will reload 'Settings' again.
+1. Scroll down to GitHub pages headings and there will now be a clickable link. https://github.com/dnashwilton/Wakehurst-Place/
+1. Click on the link for the live deployed page.
 
-Click the 'Settings' Tab
-Scroll down to the GitHub Pages Heading.
-Select 'Main Branch' as the source.
-The page will reload 'Settings' again.
-Scroll down to GitHub pages headings and there will now be a clickable link. https://github.com/dnashwilton/Wakehurst-Place/
-Click on the link for the live deployed page.
+<br>
 
-How to Fork it
+### How to Fork it
 
-On GitHub go to https://github.com/dnashwilton/Wakehurst-Place.
-In the top right, click 'Fork'.
+<br>
 
-How to Clone it
+1. On GitHub go to https://github.com/dnashwilton/Wakehurst-Place.
+1. In the top right, click 'Fork'.
 
-Go to the main page of the repository.
-Above the file list, click 'Code'.
-Select HTTPS, SSH or GitHub CLI and then click 'Copy' to clone it.
-Open Git Bash.
-Change the location of your cloned repository.
-Type git clone and then paste the URL you copied.
-Press 'Enter' to create your clone.
+<br>
 
-Making a local clone
+### How to Clone it
 
-Locate the Reposity.
-Click 'Code'.
-Click 'Clone' or 'Download'.
-Copy the Git URL from the dialogue box.
-Open a terminal window in your chosen directory using your preferred development editor.
-Change the location to where you want the cloned directory to be.
-Type git clone, and paste the URL you copied.
-Press 'Enter', and your local clone will be created.
+<br>
 
-Top of Page
+1. Go to the main page of the repository.
+1. Above the file list, click 'Code'.
+1. Select HTTPS, SSH or GitHub CLI and then click 'Copy' to clone it.
+1. Open Git Bash.
+1. Change the location of your cloned repository.
+1. Type git clone and then paste the URL you copied.
+1. Press 'Enter' to create your clone.
 
-Credits
-Content
+<br>
+
+### Making a local clone
+
+<br>
+
+1. Locate the Reposity.
+1. Click 'Code'.
+1. Click 'Clone' or 'Download'.
+1. Copy the Git URL from the dialogue box.
+1. Open a terminal window in your chosen directory using your preferred development editor.
+1. Change the location to where you want the cloned directory to be.
+1. Type git clone, and paste the URL you copied.
+1. Press 'Enter', and your local clone will be created.
+
+[Top of Page](#table-of-contents)
+
+<hr>
+
+## Credits
+
+### Content
+
 The basic setup of the pages was based on the websites of the National Trust, Wakehurst Place and Kew Gardens. As I based the project on Wakehurst Place, I looked at their website more. I chose a forest pallet with the colours of the different species of trees and sky.
 
 The navigation and footer style of coding I took from Love Running and Percipio. Percipio was the website I was learning from before beginning the course with Code Institute.
 
-Media
+## Media
 The images on the Early History and History of the Mansion are from Google images. The images and MP4's on the other pages are mine. These were taken on a Pentax K70 with 18-55mm and 55-200mm zoom lens and 50mm prime lens.
 
-Code
+## Code
 The resources that were used in the project:
 
 
@@ -345,4 +404,4 @@ I have taken some of the text from Wakehurst, Kew Gardens and various sources fr
 My thanks to my mentor Martina for the help and encouragement she gave me while I was developing this project.
 
 
-Top of Page
+[Top of Page](#table-of-contents)
