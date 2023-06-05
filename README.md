@@ -4,38 +4,38 @@ This quiz will inform you of what you about your I. Q. of peoples' sexuality.
 <br>
 # Table of Contents
 
-- [Features](#features)
-Existing Features
-Future Features
-UX
-Site Purpose
-Site Goal
-Visitors
-Communication
-User Goals
-Site Administration Goals
-[Design]
-Colour Scheme
-Typography
-Imagery
-Pages
-Testing
-Manual Testing
-Validation Testing
-Bugs
-Technologies Used
-Main Languages Used
-Programmes Used
-Deployment
-Using GitHub pages
-How to Fork it
-How to Clone it
-Making a Local Clone
-Credits
-Content
-Media
-Code
-Features
+- [Features](#features)<br>
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+- [UX](#ux)
+    - [Site Purpose](#site-purpose)
+    - [Site Goal](#site-goal)
+    - [Visitors](#visitors)
+    - [Communication](#communication)
+    - [User Goals](#user-goals)
+    - [Site Administration Goals](#site-administration-goals)
+- [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Pages](#pages)
+- [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Validation Testing](#validation-testing)
+    - [Bugs](#bugs)
+- [Technologies Used](#technologies-used)
+    - [Main Languages Used](#main-languages-used)
+    - [Programmes Used](#programmes-used)
+- [Deployment](#deployment)
+    - [Using GitHub pages](#using-github-pages)
+    - [How to Fork it](#how-to-folk-it)
+    - [How to Clone it](#how-to-clone-it)
+    - [Making a Local Clone](#making-a-local-clone)
+- [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Code](#code)
+    - [Features](#features)
 
 Existing Features
 
@@ -339,3 +339,6 @@ My thanks to my mentor Martina for the help and encouragement she gave me while 
 
 
 Top of Page
+
+[def]: #existing-features
+[def2]: #existing-features
