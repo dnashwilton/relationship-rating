@@ -196,3 +196,26 @@
     background-color: #006400;
     color:#fff
 }
+
+@media (max-width: 800px) {
+
+    #container {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #scorecontainer, #quiz {
+        width:70%;
+    }
+
+    #start {
+        width: 60px;
+        position: relative;        
+    }
+
+    #alpha, #bravo,#charlie {
+        width: 25%;
+        margin: 10px;
+    }
+
+}

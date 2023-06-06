@@ -153,7 +153,7 @@ function renderCounter() {
     if (count <= questionTime) {
         counter.innerHTML = count;
         timeGauge.style.width = count * gaugeUnit + "px";
-        count++
+        count++;
     } else {
         count = 0;
         // change progress color to red

@@ -46,28 +46,28 @@ This quiz will inform you of what you about your I. Q. of peoples' sexuality.
 
 <br>
 
-Navigation Bar
+Start Button
 
-Home Page
+Three buttons (A, B and C).
 
-Early History of Wakehurst Page
+Timer.
 
-Today at Wakehurst Page
+Progress Bar.
 
-History of Wakehurst Page
+Question and multiple choice answers.
 
-Comments Page
+Faces at the end of the quiz.
 
-Maps Page
+Percentage score.
 
 
 ### Future Features
 
-Placing text regarding information about the restaurant and cafés on a seperate area when viewed on Tablet or Iphone.
-Placing images in one column when viewed on Tablets and Iphone.
-Responsive navigation bar for Tablet and Iphone.
-Contact information for Wakehurst Place.
-Updating the name field in the comments page to exclude numbers.
+Explanation of how good your IQ is.
+Removing face and percentage statement.
+Removal of progess bar.
+Removal of background colour in progress bar.
+Insert email address and twitter information on the page
 
 [Top of Page](#table-of-contents)
 
@@ -81,7 +81,7 @@ Updating the name field in the comments page to exclude numbers.
 
 <br>
 
-To provide upto date information of Wakehurst Place and Kew Gardens with external links to the website of Wakehurst.
+To increase knowledge of the opposite sex. to find out about the user's own sex as well.
 
 <br>
 
@@ -89,7 +89,7 @@ To provide upto date information of Wakehurst Place and Kew Gardens with externa
 
 <br>
 
-To keep the visitors updated with new attractions and future events.
+To help the user expand their sexual knowledge.
 
 <br>
 
@@ -97,7 +97,7 @@ To keep the visitors updated with new attractions and future events.
 
 <br>
 
-Visitors can see some of the views of the landscape of Wakehurst Place and the surrounding landscape.
+To excourage the user to find the knowledge to help them become better lovers.
 
 <br>
 
@@ -105,9 +105,7 @@ Visitors can see some of the views of the landscape of Wakehurst Place and the s
 
 <br>
 
-The individual people which complete the Comments form are able to give their views of Wakehurst and will aid the planning of future action taken at Wakehurst.
-
-The personal information taken will be safeguarded and will used for demographic purposes.
+To make sure the user communicates with a better understanding of the partners' needs and wants.
 
 <br>
 
@@ -115,11 +113,8 @@ The personal information taken will be safeguarded and will used for demographic
 
 <br>
 
-- To find what new attractions there are at Wakehurst and where to go with the Maps.
-- The site can be used to obtain upto date information from other websites.
-- The ability to navigation between pages on all devices easily.
-- To be motivated to find out about Wakehurst Place if the mansion or part of the gardens are closed.
-- The responsive design can be viewed on other devices other than laptops and Monitors.
+- To ask the right questions.
+- To explore with their partners and find out their likes and dislikes.
 
 <br>
 
@@ -127,9 +122,9 @@ The personal information taken will be safeguarded and will used for demographic
 
 <br>
 
-- To keep the sight up to date.
-- To keep the images up to date and relevant.
-- To obtain visitor feedback with the contact form.
+- To keep the site up to date.
+- To keep the questions varied and relevant.
+- To obtain visitor feedback via email and twitter.
 
 <br>
 
@@ -142,58 +137,17 @@ The personal information taken will be safeguarded and will used for demographic
 <br>
 
 ### The Colour Scheme
-The colour scheme was chosen to compliment Wakehurst Place and Kew Gardens. Most of the colours were used and the background colour 'Whitesmoke' was used.
-
-Forest Colours
+The colour scheme was chosen to give contrast to each answer.
 
 <br>
 
 ### Typography
 
-Old English Text MT, Sans-Serif for navigation and h1 headings.
-Avenir Next LT Demi bold, Sans-Serif for h2, h3 and h4 headings.
-Calibri, Sans-Serif for paragraph text.
+Calibri, Sans-Serif.
 
-Imagery
+### Imagery
 
-All images were taken by myself with the exception of the images on the pages of the early history and History of the Mansion. Those images were downloaded from Google Images. All images were selected to support the information presented on the relevant pages.
-
-The blocks of white are picture holders
-
-Home Page
-
-
-Home Page
-
-
-Pre-history Page
-
-
-Early History Page
-
-
-Today at Wakehurst Page
-
-
-Today at Wakehurst Page
-
-
-History of the Mansion Page
-
-
-History of the Mansion Page
-
-
-Comments Page
-
-
-Comments Page
-
-
-Maps Page
-
-
-Maps of Wakehurst Page
+The images show how many questions were answered correctly. Five images of face denote what percentage the questions were correct.
 
 <br>
 
@@ -269,21 +223,18 @@ Form submit button
 When the submit button is pressed, the form submits
 Complete form and click button
 Information is sent and form cleared ready for more inputs
-Validation Testing
 
-HTML
+<br>
 
-Some errors were found but corrected while on the official W3C Validator.
-CSS
+### Validation Testing
 
-One error was found but corrected while on the official (Jigsaw) Validator.
-Bugs
-Earlier in the testing phase, I found that was found in the correct place but was not. I found was below
+HTML - No errors found on https://validator.w3.org/nu/#textarea
 
-. When I switched them to their correct alignment, W3C Validator passed the code.
-I slipped a piece of code into the css sheet and commit it. I realised what happened and corrected the error. W3C css validator caught a missing '}'. I relplaced the '}' and the error was corrected.
+CSS - No errors found on https://jigsaw.w3.org/css-validator/validator
 
-During the development of the website, I always had a local copy of the website I could refer to when needed. When issues arose, I looked through books on HTML and CSS to confirm ideas I knew could correct the problem or take the suggestions in the books so that the website would function better and the coding would be easy to read.
+JavaScript - No errors found on https://jshint.com/
+
+During the development of the website, I always had a local copy of the website I could refer to when needed. When issues arose, I looked through books on HTML, CSS and JavaScript. I also asked people on Slack and they helped me.
 
 I could not confirm that the website was working correctly on an iPhone or tablet needed for the course. I have a Galaxy Tab and phone. The website on my tablet and phone reacts the same as when I simulate the tablet and iPhone on the laptop.
 
@@ -301,7 +252,7 @@ I could not confirm that the website was working correctly on an iPhone or table
 - JAVASCRIPT
 
 ### Programmes Used
-- Gitpod to create my HTML files and CSS styles sheet before committing and pushing the project to GitHub.
+- Gitpod to create my HTML files, CSS styles sheet and JavaScript files before committing and pushing the project to GitHub.
 
 - GitHub to store my repository for submission.
 
@@ -329,7 +280,7 @@ In the GitHub Repository from the project
 1. Scroll down to the GitHub Pages Heading.
 1. Select 'Main Branch' as the source.
 1. The page will reload 'Settings' again.
-1. Scroll down to GitHub pages headings and there will now be a clickable link. https://github.com/dnashwilton/Wakehurst-Place/
+1. Scroll down to GitHub pages headings and there will now be a clickable link. https://github.com/dnashwilton/relationship-rating.
 1. Click on the link for the live deployed page.
 
 <br>
@@ -338,7 +289,7 @@ In the GitHub Repository from the project
 
 <br>
 
-1. On GitHub go to https://github.com/dnashwilton/Wakehurst-Place.
+1. On GitHub go to https://github.com/dnashwilton/relationship-rating.
 1. In the top right, click 'Fork'.
 
 <br>
@@ -378,30 +329,22 @@ In the GitHub Repository from the project
 
 ### Content
 
-The basic setup of the pages was based on the websites of the National Trust, Wakehurst Place and Kew Gardens. As I based the project on Wakehurst Place, I looked at their website more. I chose a forest pallet with the colours of the different species of trees and sky.
+The basic setup of the quiz was taken from codexplained whch wasrecommended by the tutor section of Code Institute twice. The quiz began with me trying to do a multiple-answer quiz and make the code my own. I could not achieve the correct outlook for the quiz. I asked the tutor section, and they guided me to the quiz mentioned above. Since JavaScript is hard for me to do at this time, I downloaded the code and tried to change it enough for the assessment section of Code Institute.
+I am trying to achieve something different with the code by using a switch statement. If it does not work at the time of handing the project in, then I will be looking at the project fully once I am able to do so.
 
-The navigation and footer style of coding I took from Love Running and Percipio. Percipio was the website I was learning from before beginning the course with Code Institute.
-
-## Media
-The images on the Early History and History of the Mansion are from Google images. The images and MP4's on the other pages are mine. These were taken on a Pentax K70 with 18-55mm and 55-200mm zoom lens and 50mm prime lens.
+<br>
 
 ## Code
-The resources that were used in the project:
 
+<br>
+
+The resources that were used in the project:
 
 Sams TeachYourself HTML, CSS, and JavaScript (THIRD EDITION)
 
-
 Mike McGrath HTML, CSS & JavaScript (Special Edition)
 
-
-All photos and mp4's are mine except for images on pre-history.html and mansion.html. Saved my photos and mp4's on https://dnashwilton.imgur.com/all/, onedrive, C://, usb and portable harddrives.
-
-
-I have taken some of the text from Wakehurst, Kew Gardens and various sources from Goggle. I have then rewritten some of the information in my own words. I have run the documentation through the microsoft editor for word 365 and grammerly and found that a small percentage is in the text.
-
-
-My thanks to my mentor Martina for the help and encouragement she gave me while I was developing this project.
+My thanks to my mentor Martina for the help and encouragement she gave me while I was developing this project. My thanks to Matthew Shepherd and Andy Guttridge on Slack.
 
 
 [Top of Page](#table-of-contents)
