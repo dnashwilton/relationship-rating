@@ -68,6 +68,7 @@ Removing face and percentage statement.
 Removal of progess bar.
 Removal of background colour in progress bar.
 Insert email address and twitter information on the page
+Reinstate addEventListenders for buttons. Code already on js file.
 
 [Top of Page](#table-of-contents)
 
@@ -163,66 +164,7 @@ The website was continually updated as it was developed. I tried to use the dev 
 
 The only time I was successful was when I copied and pasted the html and css code onto the html and css sheets on Visual Studio 2022 and saved everything. I right-clicked the index.html and deployed Chrome, Opera and Firefox.
 
-Tested the comments page with and without inputs in all fields.
-
-Tested all links on all pages.
-
-Verified the comments form is unable to be submitted with the required information (Name, Email, radio buttons and checkboxs clicked and the comments section).
-
 Website tested in Firefox, Opera, Edge and Chrome.
-
-Lighthouse scores
-
-
-Index Page
-
-
-Lighthouse scores
-
-
-Early History Page
-
-
-Lighthouse scores
-
-
-Lighthouse scores
-
-
-History of the Mansion Page
-
-
-Lighthouse scores
-
-
-Comments Page
-
-
-Lighthouse scores
-
-
-Maps Page
-
-
-Navigation Menu
-The relevant page will open
-Clicked each menu link
-Taken to selected Page
-
-Social Link icons
-External links will open
-Click on icon
-Taken to selected site in new tab
-
-Required form fields
-If the required field are left blank, the form will not submit. The fields will display messsages
-Incomplete form
-A message will be displayed to make sure the correct information is filled in
-
-Form submit button
-When the submit button is pressed, the form submits
-Complete form and click button
-Information is sent and form cleared ready for more inputs
 
 <br>
 
