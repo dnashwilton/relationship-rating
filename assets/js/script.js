@@ -6,7 +6,6 @@ window.onload = (event) => {
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
-// const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
@@ -17,78 +16,77 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 // create our questions
 let questions = [{
-    question: "1 What does HTML stand for?",
-    choiceA: "Correct",
-    choiceB: "Wrong",
-    choiceC: "Wrong",
-    correct: "A"
-}, {
-    question: "2 What does CSS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Correct",
-    choiceC: "Wrong",
+    question: "1/ What position is wrongly attributed to promitive societies?",
+    choiceA: "Rear Entry.",
+    choiceB: "Face-to-Face, Male above.",
+    choiceC: "Face-to-Face, Female above.",
     correct: "B"
 }, {
-    question: "3 What does JS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Wrong",
-    choiceC: "Correct",
+    question: "2/ What is the main cause of orgasm difficulty in women?",
+    choiceA: "Anxiety.",
+    choiceB: "Religious guilt.",
+    choiceC: "Insufficient arousal.",
     correct: "C"
 }, {
-    question: "4 What does HTML stand for?",
-    choiceA: "Correct",
-    choiceB: "Wrong",
-    choiceC: "Wrong",
-    correct: "A"
-}, {
-    question: "5 What does CSS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Correct",
-    choiceC: "Wrong",
+    question: "3 A man's vasectomy prevents his:",
+    choiceA: "Ejaculation.",
+    choiceB: "Fertility.",
+    choiceC: "Potency.",
     correct: "B"
 }, {
-    question: "6 What does JS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Wrong",
-    choiceC: "Correct",
+    question: "4 What hormone determines a woman's sex drive?",
+    choiceA: "Oestrogen.",
+    choiceB: "Progesterone.",
+    choiceC: "Androgen.",
     correct: "C"
 }, {
-    question: "7 What does HTML stand for?",
-    choiceA: "Correct",
-    choiceB: "Wrong",
-    choiceC: "Wrong",
-    correct: "A"
-}, {
-    question: "8 What does CSS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Correct",
-    choiceC: "Wrong",
+    question: "5 People who have many sexual fantasies are usually:",
+    choiceA: "Perverted.",
+    choiceB: "Creative.",
+    choiceC: "Frustrated.",
     correct: "B"
 }, {
-    question: "9 What does JS stand for?",
-    // imgSrc : "img/js.png",
-    choiceA: "Wrong",
-    choiceB: "Wrong",
-    choiceC: "Correct",
-    correct: "C"
-}, {
-    question: "10 What does HTML stand for?",
-    choiceA: "Correct",
-    choiceB: "Wrong",
-    choiceC: "Wrong",
-    correct: "A"
-}, {
-    question: "11 What does CSS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Correct",
-    choiceC: "Wrong",
+    question: "6 A child's sex is determined by:",
+    choiceA: "The Mother.",
+    choiceB: "The Father.",
+    choiceC: "The two parents equally.",
     correct: "B"
 }, {
-    question: "12 What does JS stand for?",
-    choiceA: "Wrong",
-    choiceB: "Wrong",
-    choiceC: "Correct",
-    correct: "C"
+    question: "7 The average length of a man's penis, when fully erect is:",
+    choiceA: "15 Centimetres (6 inches).",
+    choiceB: "20 centimetres (8 inches).",
+    choiceC: "25 centimetres (10 inches).",
+    correct: "A"
+}, {
+    question: "8 11/ Kegel exercises are intended to:",
+    choiceA: "Increase the length of a man's penis.",
+    choiceB: "Increase the muscle control of a woman's vagina.",
+    choiceC: "Strengthen the buttocks to improve thrust.",
+    correct: "B"
+}, {
+    question: "9 Where is a woman's Gräfenberg spot?",
+    choiceA: "At the back of her neck",
+    choiceB: "Inside the vagina (upperside).",
+    choiceC: "Between the anus and the vagina.",
+    correct: "B"
+}, {
+    question: "10 How many women develop a 'sex flush' during intercourse?",
+    choiceA: "25%.",
+    choiceB: "50%.",
+    choiceC: "75%.",
+    correct: "A"
+}, {
+    question: "11 The majority of human societies are:",
+    choiceA: "Monogamous (one man, one wife).",
+    choiceB: "Polygamous (one man, several wives).",
+    choiceC: "Polyandrous (one woman, several husbands).",
+    correct: "B"
+}, {
+    question: "12 39/ Premenstrual tension is due to:",
+    choiceA: "Excessive psychological worries.",
+    choiceB: "Hormonal factors.",
+    choiceC: "Nothing - it is a myth.",
+    correct: "B"
 }];
 
 // create some variables
@@ -124,10 +122,6 @@ function startQuiz() {
     renderCounter();
     TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s
 }
-
-/*alpha.addEventListener("click",renderProgress);
-bravo.addEventListener("click",renderProgress);
-charlie.addEventListener("click",renderProgress);*/
 
 // render progress
 function renderProgress() {
@@ -206,38 +200,7 @@ function scoreRender() {
         (scorePerCent >= 20) ? "assets/images/02.png" :
         "assets/images/01.png";
 
-    /* // switch case to be connected to js code when I am more confident about switch case and js code.
-
-    switch (correct) {
-
-        case "=>1 && <= 3":
-            endOfQuizMessage = `This score shows that your knowledge about sex is very basic. 
-Finding out more about it can only be to your advantage.`;
-            break;
-
-        case "=>4 && <= 6":
-            endOfQuizMessage = `Your knowledge of sex is not as good as it could be. Finding out as much 
-as you can about sex can only help to improve your relationship with 
-your partner.`;
-            break;
-
-        case "=> 7 && <= 9":
-            endOfQuizMessage = `This is a fair score but you might like to learn more. Try to broaden your knowledge 
-by reading more about the subject.`;
-            break;
-
-        case "=>10 && <= 12":
-            endOfQuizMessage = `A very impressive performance. If you are as warm and considerate a lover as you are knnowledgeable "
-about sex, your partner should be a very happy person.`;
-            break;
-
-        default:
-            window.alert("You should learn more!!");
-            break;
-
-    } */
-
-    scoreDiv.innerHTML = "<img src=" + img + ">";
+        scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
-    // scoreDiv.innerHTML += endOfQuizMessage;
+
 }

@@ -68,7 +68,9 @@ Removing face and percentage statement.
 Removal of progess bar.
 Removal of background colour in progress bar.
 Insert email address and twitter information on the page
-Reinstate addEventListenders for buttons. Code already on js file.
+Reinstate addEventListenders for buttons.
+switch case statement explaining the answers.
+Amending the size of the boxes containing the answers to the same size.
 
 [Top of Page](#table-of-contents)
 
