@@ -18,56 +18,48 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [{
     question: "1 What does HTML stand for?",
-    // imgSrc : "img/html.png",
     choiceA: "Correct",
     choiceB: "Wrong",
     choiceC: "Wrong",
     correct: "A"
 }, {
     question: "2 What does CSS stand for?",
-    // imgSrc : "img/css.png",
     choiceA: "Wrong",
     choiceB: "Correct",
     choiceC: "Wrong",
     correct: "B"
 }, {
     question: "3 What does JS stand for?",
-    // imgSrc : "img/js.png",
     choiceA: "Wrong",
     choiceB: "Wrong",
     choiceC: "Correct",
     correct: "C"
 }, {
     question: "4 What does HTML stand for?",
-    // imgSrc : "img/html.png",
     choiceA: "Correct",
     choiceB: "Wrong",
     choiceC: "Wrong",
     correct: "A"
 }, {
     question: "5 What does CSS stand for?",
-    // imgSrc : "img/css.png",
     choiceA: "Wrong",
     choiceB: "Correct",
     choiceC: "Wrong",
     correct: "B"
 }, {
     question: "6 What does JS stand for?",
-    // imgSrc : "img/js.png",
     choiceA: "Wrong",
     choiceB: "Wrong",
     choiceC: "Correct",
     correct: "C"
 }, {
     question: "7 What does HTML stand for?",
-    // imgSrc : "img/html.png",
     choiceA: "Correct",
     choiceB: "Wrong",
     choiceC: "Wrong",
     correct: "A"
 }, {
     question: "8 What does CSS stand for?",
-    // imgSrc : "img/css.png",
     choiceA: "Wrong",
     choiceB: "Correct",
     choiceC: "Wrong",
@@ -81,21 +73,18 @@ let questions = [{
     correct: "C"
 }, {
     question: "10 What does HTML stand for?",
-    // imgSrc : "img/html.png",
     choiceA: "Correct",
     choiceB: "Wrong",
     choiceC: "Wrong",
     correct: "A"
 }, {
     question: "11 What does CSS stand for?",
-    // imgSrc : "img/css.png",
     choiceA: "Wrong",
     choiceB: "Correct",
     choiceC: "Wrong",
     correct: "B"
 }, {
     question: "12 What does JS stand for?",
-    // imgSrc : "img/js.png",
     choiceA: "Wrong",
     choiceB: "Wrong",
     choiceC: "Correct",
@@ -210,45 +199,45 @@ function scoreRender() {
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score / questions.length);
 
-    // Match case to answers
-
-    /*switch (score) {
-
-        case "1 To 3":
-            endOfQuizMessage = `This score shows that your knowledge about sex is very basic. 
-Finding out more about it can only be to your advantage.`;
-            break;
-
-        case "4 To 6":
-            endOfQuizMessage = `Your knowledge of sex is not as good as it could be. Finding out as much 
-    as you can about sex can only help to improve your relationship with 
-    your partner.`;
-            break;
-
-        case "7 To 9":
-            endOfQuizMessage = `This is a fair score but you might like to learn more. Try to broaden your knowledge 
-    by reading more about the subject.`;
-            break;
-
-        case "10 To 12";
-        endOfQuizMessage = `A very impressive performance. If you are as warm and considerate a lover as you are knnowledgeable "
-    about sex, your partner should be a very happy person.`;
-        break;
-
-        default:
-            window.alert("No score!");
-            break;
-
-            End Select
-    }*/
-
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "assets/images/05.png" :
+    let img = (scorePerCent >= 80) ? "assets/images/05.png":
         (scorePerCent >= 60) ? "assets/images/04.png" :
         (scorePerCent >= 40) ? "assets/images/03.png" :
         (scorePerCent >= 20) ? "assets/images/02.png" :
         "assets/images/01.png";
 
+    /* // switch case to be connected to js code when I am more confident about switch case and js code.
+
+    switch (correct) {
+
+        case "=>1 && <= 3":
+            endOfQuizMessage = `This score shows that your knowledge about sex is very basic. 
+Finding out more about it can only be to your advantage.`;
+            break;
+
+        case "=>4 && <= 6":
+            endOfQuizMessage = `Your knowledge of sex is not as good as it could be. Finding out as much 
+as you can about sex can only help to improve your relationship with 
+your partner.`;
+            break;
+
+        case "=> 7 && <= 9":
+            endOfQuizMessage = `This is a fair score but you might like to learn more. Try to broaden your knowledge 
+by reading more about the subject.`;
+            break;
+
+        case "=>10 && <= 12":
+            endOfQuizMessage = `A very impressive performance. If you are as warm and considerate a lover as you are knnowledgeable "
+about sex, your partner should be a very happy person.`;
+            break;
+
+        default:
+            window.alert("You should learn more!!");
+            break;
+
+    } */
+
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
+    // scoreDiv.innerHTML += endOfQuizMessage;
 }
